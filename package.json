@@ -2,9 +2,10 @@
   "name": "messsenger-server",
   "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "node --watch src/index.js",
-    "start": "node src/index.js"
+"scripts": {
+  "build": "cd client && npm install && npm run build",
+  "start": "node src/index.js",
+  "dev": "node --watch src/index.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
